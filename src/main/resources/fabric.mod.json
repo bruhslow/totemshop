@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "totemshop",
+  "version": "1.0.0",
+  "name": "Totem Shop",
+  "description": "Instant 1-click totem auto-buyer with customizable keybinds, anti-cheat safe delays, and auto-closing for economy & SMP servers.",
+  "authors": [
+    "slowbag"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/totemshop/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.totemshop.TotemShopMod"
+    ],
+    "client": [
+      "com.example.totemshop.client.TotemShopClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "configScreenFactory": "com.example.totemshop.client.TotemShopConfigScreen::create"
+    }
+  }
+}
